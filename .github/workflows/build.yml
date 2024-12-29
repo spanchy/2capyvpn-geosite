@@ -48,7 +48,7 @@ jobs:
       - name: Build dlc.dat file
         run: |
           cd code || exit 1
-          go run ./ --outputdir=../
+          go run ./ --outputdir=../ --exportlists=
           cd ../ && rm -rf code
 
 
