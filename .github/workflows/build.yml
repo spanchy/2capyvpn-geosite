@@ -1,10 +1,17 @@
-name: Build dlc.dat
+name: Daily CI
 on:
+  workflow_dispatch:
+  schedule:
+    - cron: '30 14 * * *'
   push:
     branches:
       - master
     paths-ignore:
-      - "**/README.md"
+      - "README.md"
+      - ".gitignore"
+      - "LICENSE"
+      - "**/dependabot.yml"
+
 jobs:
   build:
     name: Build
@@ -21,45 +28,40 @@ jobs:
         with:
           go-version-file: code/go.mod
 
-      - name: Set variables
+      - name: Set tag
         run: |
-          echo "RELEASE_NAME=$(date +%Y%m%d%H%M%S)" >> $GITHUB_ENV
-          echo "TAG_NAME=$(date +%Y%m%d%H%M%S)" >> $GITHUB_ENV
-        shell: bash
+          DAILY_TAG=$(date +%Y%m%d%H%M)
+          echo "DAILY_TAG=$DAILY_TAG" >> $GITHUB_ENV
+          
+        - name: Create Tag
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const {DAILY_TAG} = process.env
+            github.rest.git.createRef({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              ref: `refs/tags/${DAILY_TAG}`,
+              sha: context.sha
+            })
 
       - name: Build dlc.dat file
         run: |
           cd code || exit 1
-          go run ./ --outputdir=../ --exportlists=category-ads-all,tld-cn,cn,tld-\!cn,geolocation-\!cn,apple,icloud
+          go run ./ --outputdir=../ 
           cd ../ && rm -rf code
 
-      - name: Generate dlc.dat sha256 hash
-        run: |
-          sha256sum dlc.dat > dlc.dat.sha256sum
 
-      - name: Generate Zip
+      - name: Move files to publish directory
         run: |
-          zip -9 dlc.dat.zip dlc.dat
-          sha256sum dlc.dat.zip > dlc.dat.zip.sha256sum
-
-      - name: Generate XZ
-        run: |
-          xz -z -9 -k dlc.dat
-          sha256sum dlc.dat.xz > dlc.dat.xz.sha256sum
-
-      - name: Git push assets to "release" branch
-        run: |
-          git init
-          git config --local user.name "github-actions[bot]"
-          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git checkout -b release
-          git add *.txt *.sha256sum dlc.dat dlc.dat.zip dlc.dat.xz
-          git commit -m "${{ env.RELEASE_NAME }}"
-          git remote add origin "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
-          git push -f -u origin release
-
-      - name: Release and upload assets
-        run: |
-          gh release create ${{ env.TAG_NAME }} --generate-notes --latest --title ${{ env.RELEASE_NAME }} ./dlc.dat ./dlc.dat.*
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          mkdir publish
+          mv *.dat publish
+          mv *.txt publish
+      - name: Publish release
+        uses: softprops/action-gh-release@v1
+        with:
+          tag_name: ${{ env.DAILY_TAG }}
+          name: ${{ env.DAILY_TAG }}
+          prerelease: false
+          draft: false
+          files: "publish/*"
