@@ -20,20 +20,18 @@ jobs:
     steps:
       - name: Checkout codebase
         uses: actions/checkout@v4
-        with:
-          path: code
 
       - name: Setup Go
         uses: actions/setup-go@v5
         with:
-          go-version-file: code/go.mod
-
+          go-version-file: go.mod
+          
       - name: Set tag
         run: |
           DAILY_TAG=$(date +%Y%m%d%H%M)
           echo "DAILY_TAG=$DAILY_TAG" >> $GITHUB_ENV
           
-        - name: Create Tag
+      - name: Create Tag
         uses: actions/github-script@v7
         with:
           script: |
@@ -48,7 +46,7 @@ jobs:
       - name: Build dlc.dat file
         run: |
           cd code || exit 1
-          go run ./ --outputdir=../ 
+          go run ./ 
           cd ../ && rm -rf code
 
 
