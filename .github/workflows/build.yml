@@ -48,15 +48,15 @@ jobs:
       - name: Build dlc.dat file
         run: |
           cd code || exit 1
-          go run ./ 
+          go run ./ --outputdir=../
           cd ../ && rm -rf code
 
 
       - name: Move files to publish directory
         run: |
           mkdir publish
-          mv /*.dat publish
-          mv /*.txt publish
+          mv ../*.dat publish
+          mv ../*.txt publish
       - name: Publish release
         uses: softprops/action-gh-release@v1
         with:
