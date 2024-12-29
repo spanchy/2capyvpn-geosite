@@ -20,11 +20,13 @@ jobs:
     steps:
       - name: Checkout codebase
         uses: actions/checkout@v4
+        with:
+          path: code
 
       - name: Setup Go
         uses: actions/setup-go@v5
         with:
-          go-version-file: go.mod
+          go-version-file: code/go.mod
           
       - name: Set tag
         run: |
@@ -46,7 +48,7 @@ jobs:
       - name: Build dlc.dat file
         run: |
           cd code || exit 1
-          go run ./ 
+          go run ./ --outputdir=../
           cd ../ && rm -rf code
 
 
