@@ -56,7 +56,6 @@ jobs:
         run: |
           mkdir publish
           mv ./*.dat publish
-          mv ./*.txt publish
       - name: Publish release
         uses: softprops/action-gh-release@v1
         with:
