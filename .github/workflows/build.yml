@@ -54,6 +54,14 @@ jobs:
         run: |
           mkdir publish
           mv ./*.dat publish
+          
+      - name: Purge jsdelivr CDN
+        run: |
+          cd publish || exit 1
+          for file in $(ls); do
+            curl -i "https://purge.jsdelivr.net/gh/${{ github.repository }}@release/${file}"
+          done
+          
       - name: Publish release
         uses: softprops/action-gh-release@v1
         with:
