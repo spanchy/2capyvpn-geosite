@@ -973,3 +973,5 @@ full:www.apple.com @cn
 full:www.apple.com.edgekey.net @cn
 full:www.apple.com.edgekey.net.globalredir.akadns.net @cn
 full:xp.apple.com @cn
+full:apple-relay.mask.apple-dns.net
+full:apple-relay.apple.com
