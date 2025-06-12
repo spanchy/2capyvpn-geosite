@@ -5,7 +5,7 @@ on:
     branches:
       - master
     paths:
-      - "/data/**"
+      - "data/**"
     #paths-ignore:
     #  - "README.md"
     #  - ".gitignore"
