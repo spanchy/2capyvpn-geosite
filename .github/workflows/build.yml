@@ -4,11 +4,13 @@ on:
   push:
     branches:
       - master
-    paths-ignore:
-      - "README.md"
-      - ".gitignore"
-      - "LICENSE"
-      - "**/dependabot.yml"
+    paths:
+      - "/data"
+    #paths-ignore:
+    #  - "README.md"
+    #  - ".gitignore"
+    #  - "LICENSE"
+    #  - "**/dependabot.yml"
 
 jobs:
   build:
