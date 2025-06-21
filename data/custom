@@ -5,6 +5,7 @@ sephora.fr
 
 # Teamviewer download soft domain
 download.teamviewer.com
+dl.teamviewer.com
 
 # Zimbra Mail
 zimbra.org
@@ -23,11 +24,31 @@ pkgs.org
 digikey.com
 fastpic.org
 mongodb.com
+scene7.com
+sourceforge.net
 
 # Additional domains
 hdrezka.ac
 ngrok.com
 animego.me
 phncdn.com
+
+# Money exchange rating
+bestchange.ru
+
+# Money exchange list
+buhtaobmena.me
+
+# Adventure domains
+# Airbnb
+airbnb.ru
+airbnb.com
+muscache.com
+
+# Blocked access from Russia IPs
+filecloud.com
+
+# Low speed from Russia IPs
+zoneminder.com
 
 # etc.
