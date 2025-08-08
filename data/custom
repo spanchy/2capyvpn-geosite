@@ -21,11 +21,15 @@ nextcloud.com
 codecguide.com
 paddle.com
 pkgs.org
+4pda.ws
+geekchange.com
+git.kernel.org
+clamav.net
 digikey.com
 fastpic.org
 mongodb.com
 scene7.com
-sourceforge.net
+dl.sourceforge.net
 
 # Additional domains
 hdrezka.ac
@@ -50,5 +54,8 @@ filecloud.com
 
 # Low speed from Russia IPs
 zoneminder.com
+
+# Crowdsec repository
+distrohub.kyiv.ua
 
 # etc.
