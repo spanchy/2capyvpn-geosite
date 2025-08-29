@@ -23,13 +23,13 @@ paddle.com
 pkgs.org
 4pda.ws
 geekchange.com
-git.kernel.org
+kernel.org
 clamav.net
 digikey.com
 fastpic.org
 mongodb.com
 scene7.com
-dl.sourceforge.net
+tiktokshop.com
 
 # Additional domains
 hdrezka.ac
@@ -43,6 +43,11 @@ bestchange.ru
 # Money exchange list
 buhtaobmena.me
 
+# Gen Digital software
+ccleaner.com
+ccleanerbrowser.com
+avcdn.net
+
 # Adventure domains
 # Airbnb
 airbnb.ru
@@ -51,8 +56,11 @@ muscache.com
 
 # Blocked access from Russia IPs
 filecloud.com
+isc.org
 
 # Low speed from Russia IPs
+downloads.openwrt.org
+dl.sourceforge.net
 zoneminder.com
 
 # Crowdsec repository
