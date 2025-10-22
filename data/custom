@@ -42,6 +42,7 @@ havaianas.com
 youscan.io
 hm.com
 #reddit.com
+readthedocs.io
 
 # Additional domains
 hdrezka.ac
@@ -78,10 +79,18 @@ mintlify.com
 muscache.com
 redditstatic.com
 redditmedia.com
+sentry.io
 
 # Cloudflare
 cloudfront.net
 cloudflareinsights.com
+
+# Mega
+mega.co.nz
+mega.nz
+
+# Mining polls
+emcd.io
 
 # Blocked access from Russia IPs
 filecloud.com
