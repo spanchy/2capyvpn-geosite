@@ -125,5 +125,7 @@ include:telegram
 include:whatsapp
 include:riot
 include:epicgames
+include:apple-intelligence
+include:apple-tvplus
 
 # etc.
