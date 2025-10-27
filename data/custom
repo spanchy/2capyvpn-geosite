@@ -50,6 +50,7 @@ esimplus.me
 firebirdsql.org
 ottplayer.tv
 threema.com
+pixlee.com
 
 # Additional domains
 hdrezka.ac
@@ -92,6 +93,11 @@ px-cdn.net
 px-client.net
 static.microsoft
 cdn.office.net
+cdn.gladly.com
+cdn.clarip.com
+techlab-cdn.com
+js-cdn.dynatrace.com
+pxlecdn.com
 
 # Cloudflare
 cloudfront.net
