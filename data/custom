@@ -39,10 +39,17 @@ mongodb.com
 scene7.com
 tiktokshop.com
 havaianas.com
+focalboard.com
 youscan.io
 hm.com
 #reddit.com
 readthedocs.io
+hsprotect.net
+sms-activate.io
+esimplus.me
+firebirdsql.org
+ottplayer.tv
+threema.com
 
 # Additional domains
 hdrezka.ac
@@ -76,14 +83,23 @@ mintcdn.com
 usefathom.com
 cdn.segment.com
 mintlify.com
+vstor.top
 muscache.com
 redditstatic.com
 redditmedia.com
 sentry.io
+px-cdn.net
+px-client.net
+static.microsoft
+cdn.office.net
 
 # Cloudflare
 cloudfront.net
 cloudflareinsights.com
+
+# Microsoft
+live.com
+msftauth.net
 
 # Mega
 mega.co.nz
@@ -103,5 +119,9 @@ zoneminder.com
 
 # Crowdsec repository
 distrohub.kyiv.ua
+
+# Including additional category
+include:telegram
+include:whatsapp
 
 # etc.
