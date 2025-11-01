@@ -5,9 +5,7 @@ meta.ai
 stripe.com
 
 # Sephora domains
-sephora.com
-sephora.de
-sephora.fr
+regexp:^([a-z0-9]+\.)*sephora\.([a-z]{2}|[a-z]{3})$
 
 # Games
 embark.games
@@ -57,8 +55,7 @@ threema.com
 pixlee.com
 
 # Tickets
-ticketmaster.fr
-ticketmaster.de
+regexp:^([a-z0-9]+\.)*ticketmaster\.([a-z]{2}|[a-z]{3})$
 
 # Additional domains
 hdrezka.ac
