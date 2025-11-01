@@ -140,9 +140,9 @@ distrohub.kyiv.ua
 # Including additional category
 include:telegram
 include:whatsapp
-include:riot
-include:epicgames
-include:apple-intelligence
-include:apple-tvplus
+#include:riot
+#include:epicgames
+#include:apple-intelligence
+#include:apple-tvplus
 
 # etc.
