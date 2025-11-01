@@ -1,6 +1,9 @@
 # Ai domains
 meta.ai
 
+# Billing
+stripe.com
+
 # Sephora domains
 sephora.com
 sephora.de
@@ -23,6 +26,7 @@ sury.org
 
 # Nextcloud
 nextcloud.com
+excalidraw.com
 
 # Some sites
 codecguide.com
@@ -51,6 +55,10 @@ firebirdsql.org
 ottplayer.tv
 threema.com
 pixlee.com
+
+# Tickets
+ticketmaster.fr
+ticketmaster.de
 
 # Additional domains
 hdrezka.ac
@@ -98,6 +106,8 @@ cdn.clarip.com
 techlab-cdn.com
 js-cdn.dynatrace.com
 pxlecdn.com
+cdn.branch.io
+operacdn.com
 
 # Cloudflare
 cloudfront.net
