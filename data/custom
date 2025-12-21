@@ -123,7 +123,9 @@ cloudflareinsights.com
 
 # Microsoft
 live.com
+outlook.com
 msftauth.net
+microsoftonline.com
 
 # Mega
 mega.co.nz
@@ -152,6 +154,8 @@ distrohub.kyiv.ua
 include:telegram
 include:whatsapp
 include:roblox
+include:category-rkn
+include:category-cdn
 #include:epicgames
 #include:apple-intelligence
 #include:apple-tvplus
