@@ -40,6 +40,7 @@ paddle.com
 pkgs.org
 git-scm.com
 4pda.ws
+abtasty.com
 geekchange.com
 kernel.org
 deb.freepbx.org
@@ -107,6 +108,7 @@ redditstatic.com
 redditmedia.com
 sentry.io
 px-cdn.net
+cquotient.com
 px-client.net
 static.microsoft
 cdn.office.net
@@ -139,6 +141,10 @@ bitmain.com
 # Blocked access from Russia IPs
 filecloud.com
 isc.org
+
+# Ubisoft
+ubi.com
+ubisoft.com
 
 # IPTV
 tv.team
