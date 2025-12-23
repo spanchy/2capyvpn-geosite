@@ -103,10 +103,14 @@ vsassets.io
 muscache.com
 redditstatic.com
 redditmedia.com
+xnxx-cdn.com
+xhcdn.com
 sentry.io
 px-cdn.net
 cquotient.com
 px-client.net
+videofile.me
+octo25.me
 static.microsoft
 cdn.office.net
 cdn.gladly.com
@@ -140,6 +144,7 @@ bitmain.com
 # Blocked access from Russia IPs
 filecloud.com
 isc.org
+happ-proxy.com
 
 # Ubisoft
 ubi.com
@@ -162,6 +167,8 @@ include:whatsapp
 include:roblox
 include:category-rkn
 include:category-cdn
+
+
 #include:epicgames
 #include:apple-intelligence
 #include:apple-tvplus
