@@ -2,12 +2,6 @@
 ipconfig.io
 ifconfig.io
 
-
-# Local
-local
-loc
-lan
-
 # Some list
 include:apple
 include:epicgames
@@ -15,4 +9,3 @@ include:google-play
 include:private
 include:riot
 include:steam
-
