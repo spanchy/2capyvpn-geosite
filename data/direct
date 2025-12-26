@@ -6,6 +6,7 @@ ifconfig.io
 include:apple
 include:epicgames
 include:google-play
+include:microsoft
 include:private
 include:riot
 include:steam
