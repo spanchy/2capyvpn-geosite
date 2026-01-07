@@ -163,14 +163,6 @@ zoneminder.com
 distrohub.kyiv.ua
 
 # Including additional category
-include:category-ban-ru
-include:discord
-include:telegram
-include:whatsapp
-include:signal
 include:roblox
-include:youtube
-include:category-rkn
-include:category-cdn
 
 # etc.
