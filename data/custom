@@ -4,7 +4,7 @@ meta.ai
 # Billing
 stripe.com
 
-# Sephora domains
+# Regex
 regexp:^([a-z0-9]+\.)*sephora\.[a-z0-9-]+$
 regexp:^([a-z0-9]+\.)*pinterest\.[a-z0-9-]+$
 regexp:^([a-z0-9]+\.)*pinterest\.[a-z0-9-]+\.[a-z0-9-]+$
@@ -39,6 +39,7 @@ codecguide.com
 paddle.com
 pkgs.org
 git-scm.com
+pinterestmail.com
 4pda.ws
 abtasty.com
 geekchange.com
@@ -103,6 +104,8 @@ cdn.segment.com
 mintlify.com
 vstor.top
 vsassets.io
+pinimg.com.cdn.cloudflare.net
+pinterest.map.fastly.net
 muscache.com
 redditstatic.com
 redditmedia.com
