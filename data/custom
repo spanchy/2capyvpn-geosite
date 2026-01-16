@@ -4,8 +4,10 @@ meta.ai
 # Billing
 stripe.com
 
-# Sephora domains
-regexp:^([a-z0-9]+\.)*sephora\.([a-z]{2}|[a-z]{3})$
+# Regex
+regexp:^([a-z0-9]+\.)*sephora\.[a-z0-9-]+$
+regexp:^([a-z0-9]+\.)*pinterest\.[a-z0-9-]+$
+regexp:^([a-z0-9]+\.)*pinterest\.[a-z0-9-]+\.[a-z0-9-]+$
 
 # Games
 embark.games
@@ -37,6 +39,7 @@ codecguide.com
 paddle.com
 pkgs.org
 git-scm.com
+pinterestmail.com
 4pda.ws
 abtasty.com
 geekchange.com
@@ -101,6 +104,8 @@ cdn.segment.com
 mintlify.com
 vstor.top
 vsassets.io
+pinimg.com.cdn.cloudflare.net
+pinterest.map.fastly.net
 muscache.com
 redditstatic.com
 redditmedia.com
@@ -163,6 +168,5 @@ zoneminder.com
 distrohub.kyiv.ua
 
 # Including additional category
-include:roblox
 
 # etc.

@@ -4,16 +4,12 @@ ifconfig.io
 stream-balancer-allo-1.live
 huntshowdown.com
 
+# Special domains
+2capy.com
+ittema.com
+
 # Special local zone
 loc
 
-# Some list
-include:apple
-include:blizzard
-include:epicgames
-include:google-play
-include:microsoft
+# Reserved
 include:private
-include:riot
-include:steam
-include:twitch
