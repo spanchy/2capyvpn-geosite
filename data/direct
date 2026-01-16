@@ -13,3 +13,4 @@ loc
 
 # Reserved
 include:private
+include:google-play
