@@ -19,14 +19,23 @@ jobs:
 
     steps:
       - name: Checkout codebase
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
-          path: code
+          fetch-depth: 1
+
+      - name: Checkout geosite builder
+        uses: actions/checkout@v6
+        with:
+          repository: v2fly/domain-list-community
+          path: community
+          fetch-depth: 1
 
       - name: Setup Go
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v6
         with:
-          go-version-file: code/go.mod
+          go-version-file: community/go.mod
+          cache: true
+          cache-dependency-path: community/go.sum
           
       - name: Set tag
         run: |
@@ -45,12 +54,21 @@ jobs:
               sha: context.sha
             })
 
-      - name: Build dlc.dat file
+      - name: Build geosite.dat
         run: |
-          cd code || exit 1
-          go run ./ --outputdir=../
-          cd ../ && rm -rf code
+          set -euo pipefail
 
+          rm -rf community/data /tmp/out
+          mkdir -p community/data /tmp/out
+
+          cp -a ./data/. community/data/
+
+          pushd community >/dev/null
+          go run ./ -outputdir=/tmp/out
+          popd >/dev/null
+
+          test -s /tmp/out/dlc.dat
+          cp -f /tmp/out/dlc.dat ./geosite.dat
 
       - name: Move files to publish directory
         run: |
