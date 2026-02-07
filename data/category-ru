@@ -1,28 +1,412 @@
-# Russian TLDs
-ru
-su
-xn--p1ai
-moscow
-ru.net
-volga
-tatar
-yandex
-xn--d1acj3b
-xn--80asehdb
-xn--c1avg
-xn--80aswg
-xn--80adxhks
+# custom for easy checking
 
-# Belarussian TLDs
-by
-xn--90ais
+domain:2ip.ru
 
-# Kazakhstan TLDs
-kz
-xn--80ao21a
+# v2ray category-gov-ru
 
+domain:emias.info
 
-include:category-gov-ru
-include:category-banks-ru
-include:category-only-ru
+# runetfreedom only ru
 
+domain:bitrix.info
+domain:ozonusercontent.com
+domain:showip.net
+
+# Yandex
+
+domain:yandex.aero
+domain:yandex.az
+domain:yandex.co.il
+domain:yandex.com
+domain:yandex.com.am
+domain:yandex.com.ge
+domain:yandex.com.tr
+domain:yandex.com.ua
+domain:yandex.de
+domain:yandex.ee
+domain:yandex.eu
+domain:yandex.fi
+domain:yandex.fr
+domain:yandex.jobs
+domain:yandex.kg
+domain:yandex.kz
+domain:yandex.lt
+domain:yandex.lv
+domain:yandex.md
+domain:yandex.net
+domain:yandex.org
+domain:yandex.pl
+domain:yandex.st
+domain:yandex.sx
+domain:yandex.tj
+domain:yandex.tm
+domain:yandex.uz
+domain:yandexcloud.net
+domain:yastatic.net
+domain:yandex.ua
+
+# VK Company
+
+domain:mvk.com
+domain:userapi.com
+domain:vk-apps.com
+domain:vk-cdn.me
+domain:vk-cdn.net
+domain:vk-portal.net
+domain:vk.cc
+domain:vk.com
+domain:vk.company
+domain:vk.design
+domain:vk.link
+domain:vk.me
+domain:vk.team
+domain:vkcache.com
+domain:vkgo.app
+domain:vklive.app
+domain:vkmessenger.app
+domain:vkmessenger.com
+domain:vkuseraudio.com
+domain:vkuserlive.net
+domain:vkuservideo.com
+domain:vkuservideo.net
+domain:mycdn.me
+
+# Tinkoff / Tbank
+
+domain:tinkoff.do
+domain:four-seasons.group
+domain:tbankjob.site
+domain:4epenaxa.com
+domain:tinkoff-digital.com
+domain:tinkoff.tech
+domain:securetpayment.com
+domain:tinkoff-group.com
+domain:tinkoff.cr
+domain:careeny.xyz
+domain:tinkoff.link
+domain:tlnkof.xyz
+domain:tinkoffgroup.com
+domain:drivercard.site
+domain:tinkoffdigital.com
+domain:tynkoff.cc
+domain:bonus-card.ml
+domain:dorenko.tv
+domain:tinkoffip.site
+domain:tinkoff-anketa.site
+domain:aksyuterian.com
+domain:tinkoff-osago.tk
+domain:bankonline.center
+domain:tlnkoff-open.xyz
+domain:3ds-secure-payment.com
+domain:careery.xyz
+domain:tinkoffreg.site
+domain:tinkoff.cc
+domain:za-group.net
+domain:eginvestments.net
+domain:t-atm.org
+domain:t-avia.org
+domain:t-gorod.org
+domain:t-tps.org
+domain:t-capy.org
+domain:posl-t.org
+domain:billapp.org
+domain:womba-t.org
+domain:tinkoff.sg
+domain:tinkoff.ai
+domain:koshelek.app
+domain:tinkoff.biz
+domain:tinkoffmobile.com
+domain:jump.finance
+domain:tinkoff.cloud
+domain:t.finance
+domain:cloudpayments.world
+domain:investlaboratory.com
+
+# Alfabank
+
+domain:alfa.me
+domain:alfa-bank.net
+domain:alfafx.com
+domain:alfa-bank.biz
+domain:alfa.click
+domain:alfaprivate.com
+domain:alfabank.tv
+domain:alfabank.st
+domain:alformacap.com
+domain:alformacapital.com
+domain:alfa-bank.info
+domain:beta-bank.com
+domain:alfa-finance.com
+domain:alfafinance.biz
+domain:alfa-bank.org
+domain:alfa-bank.com
+domain:lead-pro2023.online
+domain:alfa-bank.financial
+domain:alfa.link
+domain:alfabank.in
+domain:xn--90aifd0aza.site
+domain:investalfabank.com
+domain:alfabank.com
+domain:alfabank.org
+domain:alfa.bank
+domain:alfabank.financial
+domain:alfabank.biz
+domain:miya-news.online
+domain:4meeting.me
+domain:alfa-fx.com
+domain:alfafuture.com
+domain:svoy.academy
+domain:alfa-usa.com
+domain:alfa-pc.com
+
+# VTB
+
+domain:vtbglobalperspectives.com
+domain:russiacalling.com
+domain:vtb-russia.com
+domain:vtbcareer.com
+domain:vtbpartners.com
+domain:vtb24.com
+domain:vtb-direct.com
+domain:vtb.com
+domain:vtbrussia.com
+domain:vtb.digital
+domain:vtbkep.site
+domain:vtbindia.com
+domain:vtb.promo
+
+# Sberbank / Sber
+
+domain:sberbank.com
+domain:sberlabs.com
+domain:sber.me
+domain:sberdocs.com
+domain:sberbankinvestmentresearch.com
+domain:nasporte.life
+domain:sberanalytics.com
+domain:sberbank-cib.com
+domain:sberpravo.info
+domain:sberbusiness.live
+domain:oidconnect.com
+domain:sber.cn
+domain:sber.pro
+domain:sberbank.co.in
+domain:polly.events
+domain:senat.cloud
+domain:nasporte.pro
+domain:sberpravo.tech
+domain:sberbank-pb.com
+domain:sber-impulse.com
+domain:sberimpulse.com
+domain:therussiaforum.com
+domain:aihome.dev
+domain:sbruss.store
+domain:sber.sbs
+domain:sber.world
+domain:smart-cards.pro
+domain:coloradogrowers.com
+domain:sberpay.vip
+domain:creditdevelopment.pro
+domain:topcards.pro
+domain:svy59w.shop
+domain:sber.cfd
+domain:topdeposit.pro
+domain:sberfinance.net
+domain:sber.ws
+domain:vozvratnalogov.online
+domain:smsemailstats.com
+domain:sbercoin.com
+
+# МОРСКОЙ БАНК (АО) (Рег. № 77)
+
+domain:maritimebank.com
+
+# Прио-Внешторгбанк (ПАО) (Рег. № 212)
+
+domain:priovtb.com
+
+# Банк ГПБ (АО) (Рег. № 354)
+
+domain:gazprombank.tech
+
+# ПАО "СПБ Банк" (Рег. № 435)
+
+domain:spbbank.com
+
+# ООО "Камкомбанк" (Рег. № 438)
+
+domain:kamkombank.pro
+
+# АО РНКО "НОДА" (Рег. № 503)
+
+domain:noda.finance
+
+# ПАО "Совкомбанк" (Рег. № 963)
+
+domain:halva.email
+domain:halva.energy
+domain:halva.im
+domain:halva.promo
+domain:halva.tel
+domain:home.bank
+domain:hva.im
+domain:doktor.kr
+domain:scb.im
+domain:sovcombank.business
+domain:sovcombank.credit
+domain:sovcombank.info
+domain:sovcombank.com
+
+# АО "ПЕРВОУРАЛЬСКБАНК" (Рег. № 965)
+
+domain:pvubank.com
+
+# АО КБ "ВАКОБАНК" (Рег. № 1291)
+
+domain:vakobank.com
+
+# КБ "ЭНЕРГОТРАНСБАНК" (АО) (Рег. № 1307)
+
+domain:energotransbank.com
+
+# ООО "АЛТЫНБАНК" (Рег. № 2070)
+
+domain:altynbank.com
+
+# АО АКБ "Алеф-Банк" (Рег. № 2119)
+
+domain:alefbank.com
+
+# АКБ "Абсолют Банк" (ПАО) (Рег. № 2306)
+
+domain:absolutbank.com
+
+# АО "Банк ДОМ.РФ" (Рег. № 2312)
+
+domain:roscap.com
+
+# КБ "Кубань Кредит" ООО (Рег. № 2518)
+
+domain:kk.bank
+domain:kuban-credit.biz
+domain:kuban-credit.com
+domain:kuban-credit.net
+domain:kuban-kredit.biz
+domain:kuban-kredit.com
+domain:kuban-kredit.net
+domain:kuban.credit
+domain:kubancredit.biz
+domain:kubancredit.com
+domain:kubancredit.net
+domain:kubankredit.biz
+domain:kubankredit.com
+domain:kubankredit.net
+domain:xn----7sbcoetidz6azac4j.com
+domain:xn----7sbcoetidz6azac4j.net
+domain:xn--80abkdqhcx2axc5i.com
+
+# Банк "КУБ" (АО) (Рег. № 2584)
+
+domain:prostobank.online
+
+# АКБ "СЛАВИЯ" (АО) (Рег. № 2664)
+
+domain:slavia-bank.com
+domain:slaviabank.com
+
+# КБ "ЛОКО-Банк" (АО) (Рег. № 2707)
+
+domain:locko-bank.info
+
+# ПАО СКБ Приморья "Примсоцбанк" (Рег. № 2733)
+
+domain:pskb.com
+
+# АО КБ "Соколовский" (Рег. № 2830)
+
+domain:astrasend.net
+
+# ООО "ПроКоммерцБанк" (Рег. № 2996)
+
+domain:procombank.com
+
+# РНКО "Платежный Центр" (ООО) (Рег. № 3166)
+
+domain:corona-perevod.com
+domain:coronaperevod.com
+domain:korona-perevod.com
+domain:koronapay.com
+domain:koronaperevod.com
+domain:perevod-korona.biz
+domain:perevod-korona.info
+domain:perevod-korona.org
+domain:perevod-korona.pro
+domain:perevodkorona.com
+domain:korona.com
+
+# ПАО "БАЛТИНВЕСТБАНК" (Рег. № 3176)
+
+domain:baltinvestbank.com
+
+# АО "ПроБанк" (Рег. № 3296)
+
+domain:probank.pro
+
+# АО "Мидзухо Банк (Москва)" (Рег. № 3337)
+
+domain:mizuhogroup.com
+
+# АО "Россельхозбанк" (Рег. № 3349)
+
+domain:rshb.pro
+domain:rusagrobank.com
+
+# АО "Банк Финсервис" (Рег. № 3388)
+
+domain:finsb.com
+
+# "Банк "МБА-МОСКВА" ООО (Рег. № 3395)
+
+domain:granat.az
+
+# ООО "Ю Би Эс Банк" (Рег. № 3463)
+
+domain:ubs.com
+
+# АО "Эм-Ю-Эф-Джи Банк (Евразия)" (Рег. № 3465)
+
+domain:mufg.jp
+
+# НКО НКЦ (АО) (Рег. № 3466)
+
+domain:nationalclearingcenter.com
+domain:nationalclearingcentre.com
+domain:ncc-qccp.com
+
+# АО КБ "ЮНИСТРИМ" (Рег. № 3467)
+
+domain:unistream.com
+
+# ООО "Чайна Констракшн Банк" (Рег. № 3515)
+
+domain:ccb.com
+
+# ООО "Чайнасельхозбанк" (Рег. № 3529)
+
+domain:abchina.com
+
+# ООО "НКО "ЭЛЕКСИР" (Рег. № 3533)
+
+domain:eleksir.finance
+
+# АО "Банк 131" (Рег. № 3538)
+
+domain:bank131.com
+
+# ООО "Банк Точка" (Рег. № 3545)
+
+domain:tochka.com
+
+# ООО РНКО "ЭР Финанс" (Рег. № 3555)
+
+domain:er-fin.com
