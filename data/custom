@@ -43,7 +43,6 @@ paddle.com
 pkgs.org
 git-scm.com
 pinterestmail.com
-4pda.ws
 abtasty.com
 geekchange.com
 kernel.org
@@ -173,5 +172,6 @@ zoneminder.com
 distrohub.kyiv.ua
 
 # Including additional category
+include: category-geoblock-ru
 
 # etc.
