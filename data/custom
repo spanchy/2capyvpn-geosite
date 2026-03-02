@@ -172,6 +172,6 @@ zoneminder.com
 distrohub.kyiv.ua
 
 # Including additional category
-include: category-geoblock-ru
+include:category-geoblock-ru
 
 # etc.
