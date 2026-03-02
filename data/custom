@@ -3,6 +3,9 @@ meta.ai
 
 # Billing
 stripe.com
+stripe.dev
+stripe.global
+link.com
 
 # Regex
 regexp:^([a-z0-9]+\.)*sephora\.[a-z0-9-]+$
@@ -117,6 +120,7 @@ px-cdn.net
 cquotient.com
 px-client.net
 videofile.me
+stripecdn.com
 octo25.me
 static.microsoft
 cdn.office.net
