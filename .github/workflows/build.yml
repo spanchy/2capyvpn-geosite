@@ -73,6 +73,7 @@ jobs:
           set -euo pipefail
           rm -rf release
           rm -rf /tmp/release
+          mkdir release
           cp ./geosite.dat release/
           sha256sum release/geosite.dat > release/geosite.dat.sha256
           cp -r release /tmp/release
