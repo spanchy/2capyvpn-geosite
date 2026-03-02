@@ -3,6 +3,9 @@ meta.ai
 
 # Billing
 stripe.com
+stripe.dev
+stripe.global
+link.com
 
 # Regex
 regexp:^([a-z0-9]+\.)*sephora\.[a-z0-9-]+$
@@ -40,12 +43,12 @@ paddle.com
 pkgs.org
 git-scm.com
 pinterestmail.com
-4pda.ws
 abtasty.com
 geekchange.com
 kernel.org
 deb.freepbx.org
 reversing.center
+speedtest.net
 clamav.net
 digikey.com
 fastpic.org
@@ -116,6 +119,7 @@ px-cdn.net
 cquotient.com
 px-client.net
 videofile.me
+stripecdn.com
 octo25.me
 static.microsoft
 cdn.office.net
@@ -168,5 +172,6 @@ zoneminder.com
 distrohub.kyiv.ua
 
 # Including additional category
+include: category-geoblock-ru
 
 # etc.

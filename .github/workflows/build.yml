@@ -1,4 +1,4 @@
-name: Build geosite.dat
+name: Build geosite
 on:
   workflow_dispatch:
   push:
@@ -6,11 +6,6 @@ on:
       - master
     paths:
       - "data/**"
-    #paths-ignore:
-    #  - "README.md"
-    #  - ".gitignore"
-    #  - "LICENSE"
-    #  - "**/dependabot.yml"
 
 jobs:
   build:
@@ -19,25 +14,36 @@ jobs:
 
     steps:
       - name: Checkout codebase
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
-          path: code
+          fetch-depth: 1
+
+      - name: Checkout geosite builder
+        uses: actions/checkout@v6
+        with:
+          repository: v2fly/domain-list-community
+          path: community
+          fetch-depth: 1
 
       - name: Setup Go
-        uses: actions/setup-go@v5
+        uses: actions/setup-go@v6
         with:
-          go-version-file: code/go.mod
-          
+          go-version-file: community/go.mod
+          cache: true
+          cache-dependency-path: community/go.sum
+
       - name: Set tag
+        if: github.ref_name == 'master'
         run: |
           DAILY_TAG=$(date +%Y%m%d%H%M)
           echo "DAILY_TAG=$DAILY_TAG" >> $GITHUB_ENV
-          
+
       - name: Create Tag
-        uses: actions/github-script@v7
+        if: github.ref_name == 'master'
+        uses: actions/github-script@v8
         with:
           script: |
-            const {DAILY_TAG} = process.env
+            const { DAILY_TAG } = process.env
             github.rest.git.createRef({
               owner: context.repo.owner,
               repo: context.repo.repo,
@@ -45,43 +51,72 @@ jobs:
               sha: context.sha
             })
 
-      - name: Build dlc.dat file
+      - name: Build geosite.dat
         run: |
-          cd code || exit 1
-          go run ./ --outputdir=../
-          cd ../ && rm -rf code
+          set -euo pipefail
 
+          rm -rf community/data /tmp/out
+          mkdir -p community/data /tmp/out
+
+          cp -a ./data/. community/data/
+
+          pushd community >/dev/null
+          go run ./ -outputdir=/tmp/out
+          popd >/dev/null
+
+          test -s /tmp/out/dlc.dat
+          cp -f /tmp/out/dlc.dat ./geosite.dat
 
       - name: Move files to publish directory
+        if: github.ref_name == 'master'
         run: |
-          mkdir publish
-          mv ./*.dat publish
+          set -euo pipefail
+          rm -rf release
+          rm -rf /tmp/release
+          cp ./geosite.dat release/
+          sha256sum release/geosite.dat > release/geosite.dat.sha256
+          cp -r release /tmp/release
           
       - name: Git push assets to "release" branch
+        if: github.ref_name == 'master'
         run: |
-          cd publish || exit 1
+          cd release || exit 1
           git init
-          git config --local user.name "github-actions[bot]"
-          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "spanchy"
+          git config --local user.email "spanchy@users.noreply.github.com"
           git checkout -b release
           git add -A
-          git commit -m "${{ env.DAILY_TAG }}"
+          git commit -m "Release ${{ env.DAILY_TAG }}"
           git remote add origin "https://${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}"
           git push -f -u origin release
-
+          cd .. || exit 1
+          git config --local user.name "spanchy"
+          git config --local user.email "spanchy@users.noreply.github.com"
+          git checkout master
+          rm -rf release
+          cp -r /tmp/release ./release
+          git add release/
+          git commit -m "Release ${{ env.DAILY_TAG }}" || echo "No changes to commit"
+          git push origin master
           
       - name: Purge jsdelivr CDN
+        if: github.ref_name == 'master'
         run: |
-          cd publish || exit 1
-          for file in $(ls); do
-            curl -i "https://purge.jsdelivr.net/gh/${{ github.repository }}@release/${file}"
+          set -euo pipefail
+          cd release || exit 1
+          find . -type f -print0 | while IFS= read -r -d '' f; do
+            rel="${f#./}"
+            curl -i "https://purge.jsdelivr.net/gh/${{ github.repository }}@release/${rel}"
           done
           
       - name: Publish release
+        if: github.ref_name == 'master'
         uses: softprops/action-gh-release@v1
         with:
           tag_name: ${{ env.DAILY_TAG }}
           name: ${{ env.DAILY_TAG }}
           prerelease: false
           draft: false
-          files: "publish/*"
+          files: |
+            release/geosite.dat
+            release/geosite.dat.sha256
