@@ -64,23 +64,28 @@ jobs:
           echo "category-ru" >> "$needed"
 
           resolve() {
-            local f="$1"
-            grep '^include:' "community/data/$f" 2>/dev/null | \
-            sed 's/include://' | \
+            local file="$1"
+            # если файла нет — пропускаем
+            [ -f "community/data/$file" ] || return 0
+            # читаем include зависимости
             while IFS= read -r dep; do
-            if ! grep -Fxq "$dep" "$needed"; then
-              echo "$dep" >> "$needed"
-              resolve "$dep"
-            fi
-            done
+              if ! grep -Fxq "$dep" "$needed"; then
+                echo "$dep" >> "$needed"
+                resolve "$dep"
+              fi
+              done < <(grep '^include:' "community/data/$file" 2>/dev/null | sed 's/^include://')
           }
 
-          resolve category-ru
+          resolve "category-ru"
 
+          # копируем только нужные upstream файлы
           while IFS= read -r f; do
-            cp "community/data/$f" "/tmp/data-min/$f"
+            if [ -f "community/data/$f" ]; then
+              cp "community/data/$f" "/tmp/data-min/$f"
+            fi
           done < "$needed"
 
+          # мержим с локальным
           if [ -f data/category-ru ]; then
             cat data/category-ru >> /tmp/data-min/category-ru
           fi
