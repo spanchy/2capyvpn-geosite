@@ -68,9 +68,9 @@ jobs:
 
           sort -u /tmp/needed -o /tmp/needed
           
-          while read f; do
+          while IFS= read -r f || [ -n "$f" ]; do
             cp "data/$f" /tmp/data-min/
-          done < /tmp/needed
+            done < /tmp/needed
 
           cd ..
           
