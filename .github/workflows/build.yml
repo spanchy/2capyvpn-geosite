@@ -61,15 +61,21 @@ jobs:
           cd community
           echo category-ru > /tmp/needed
 
-          awk -F: '
-            FNR==NR {need[$1]; next}
-            /^include:/ {print $2}
+          awk '
+            FNR==NR {need[$0]; next}
+            $0 ~ /^include:/ {
+              name = substr($0,9)
+              gsub(/\r/,"",name)
+              print name
+            }
             ' /tmp/needed data/* | sort -u >> /tmp/needed
-
-          sort -u /tmp/needed -o /tmp/needed
-          
-          while IFS= read -r f || [ -n "$f" ]; do
-            cp "data/$f" /tmp/data-min/
+         
+          while IFS= read -r f; do
+            if [ -f "data/$f" ]; then
+              cp "data/$f" /tmp/data-min/
+            else
+              echo "skip missing: $f"
+            fi
             done < /tmp/needed
 
           cd ..
