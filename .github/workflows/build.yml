@@ -55,32 +55,42 @@ jobs:
         run: |
           set -euo pipefail
 
-          rm -rf /tmp/out /tmp/data-min
+          rm -rf /tmp/out /tmp/data-min /tmp/needed
           mkdir -p /tmp/out /tmp/data-min
 
-          cd community
-          echo category-ru > /tmp/needed
+          needed=/tmp/needed
+          touch "$needed"
+
+          echo "category-ru" >> "$needed"
+
+          resolve() {
+            local f="$1"
+            grep '^include:' "community/data/$f" 2>/dev/null | \
+            sed 's/include://' | \
+            while IFS= read -r dep; do
+            if ! grep -Fxq "$dep" "$needed"; then
+              echo "$dep" >> "$needed"
+              resolve "$dep"
+            fi
+            done
+          }
+
+          resolve category-ru
+
+          while IFS= read -r f; do
+            cp "community/data/$f" "/tmp/data-min/$f"
+          done < "$needed"
+
+          if [ -f data/category-ru ]; then
+            cat data/category-ru >> /tmp/data-min/category-ru
+          fi
 
           awk '
-            FNR==NR {need[$0]; next}
-            $0 ~ /^include:/ {
-              name = substr($0,9)
-              gsub(/\r/,"",name)
-              print name
-            }
-            ' /tmp/needed data/* | sort -u >> /tmp/needed
-         
-          while IFS= read -r f; do
-            if [ -f "data/$f" ]; then
-              cp "data/$f" /tmp/data-min/
-            else
-              echo "skip missing: $f"
-            fi
-            done < /tmp/needed
-
-          cd ..
+            /^include:/ {print; next}
+            !seen[$0]++
+          ' /tmp/data-min/category-ru > /tmp/data-min/category-ru.tmp
           
-          cat data/category-ru >> /tmp/data-min/category-ru
+          mv /tmp/data-min/category-ru.tmp /tmp/data-min/category-ru
           rm -rf community/data
           mv /tmp/data-min community/data
 
@@ -88,7 +98,8 @@ jobs:
           go run ./ -outputdir=/tmp/out
           popd >/dev/null
 
-          cp /tmp/out/dlc.dat geosite.dat
+          test -s /tmp/out/dlc.dat
+          cp -f /tmp/out/dlc.dat ./geosite.dat
 
       - name: Move files to publish directory
         if: github.ref_name == 'master'
