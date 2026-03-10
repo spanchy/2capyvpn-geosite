@@ -98,6 +98,7 @@ jobs:
           mv /tmp/data-min/category-ru.tmp /tmp/data-min/category-ru
           rm -rf community/data
           mv /tmp/data-min community/data
+          find ./data -type f ! -name "category-ru" -exec cp -a --parents {} community/data/ \;
 
           pushd community >/dev/null
           go run ./ -outputdir=/tmp/out
