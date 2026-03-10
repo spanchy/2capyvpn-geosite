@@ -55,17 +55,34 @@ jobs:
         run: |
           set -euo pipefail
 
-          rm -rf community/data /tmp/out
-          mkdir -p community/data /tmp/out
+          rm -rf /tmp/out /tmp/data-min
+          mkdir -p /tmp/out /tmp/data-min
 
-          cp -a ./data/. community/data/
+          cd community
+          echo category-ru > /tmp/needed
+
+          awk -F: '
+            FNR==NR {need[$1]; next}
+            /^include:/ {print $2}
+            ' /tmp/needed data/* | sort -u >> /tmp/needed
+
+          sort -u /tmp/needed -o /tmp/needed
+          
+          while read f; do
+            cp "data/$f" /tmp/data-min/
+          done < /tmp/needed
+
+          cd ..
+          
+          cat data/category-ru >> /tmp/data-min/category-ru
+          rm -rf community/data
+          mv /tmp/data-min community/data
 
           pushd community >/dev/null
           go run ./ -outputdir=/tmp/out
           popd >/dev/null
 
-          test -s /tmp/out/dlc.dat
-          cp -f /tmp/out/dlc.dat ./geosite.dat
+          cp /tmp/out/dlc.dat geosite.dat
 
       - name: Move files to publish directory
         if: github.ref_name == 'master'
@@ -77,7 +94,7 @@ jobs:
           cp ./geosite.dat release/
           sha256sum release/geosite.dat > release/geosite.dat.sha256
           cp -r release /tmp/release
-          
+
       - name: Git push assets to "release" branch
         if: github.ref_name == 'master'
         run: |
@@ -99,7 +116,7 @@ jobs:
           git add release/
           git commit -m "Release ${{ env.DAILY_TAG }}" || echo "No changes to commit"
           git push origin master
-          
+
       - name: Purge jsdelivr CDN
         if: github.ref_name == 'master'
         run: |
@@ -109,7 +126,7 @@ jobs:
             rel="${f#./}"
             curl -i "https://purge.jsdelivr.net/gh/${{ github.repository }}@release/${rel}"
           done
-          
+
       - name: Publish release
         if: github.ref_name == 'master'
         uses: softprops/action-gh-release@v1
