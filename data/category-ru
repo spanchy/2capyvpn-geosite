@@ -1,6 +1,3 @@
-# including v2fly community ru-category
-include:category-ru-upstream
-
 # custom for easy checking
 domain:2ip.ru
 
