@@ -59,29 +59,22 @@ jobs:
           mkdir -p /tmp/out /tmp/data-min
 
           cd community
-
-          # список файлов для вытягивания
           echo category-ru > /tmp/needed
 
-          # рекурсивно собираем include зависимости
           awk -F: '
             FNR==NR {need[$1]; next}
             /^include:/ {print $2}
             ' /tmp/needed data/* | sort -u >> /tmp/needed
 
           sort -u /tmp/needed -o /tmp/needed
-
-          # копируем только нужные файлы
+          
           while read f; do
             cp "data/$f" /tmp/data-min/
           done < /tmp/needed
 
           cd ..
-
-          # merge с твоим списком
+          
           cat data/category-ru >> /tmp/data-min/category-ru
-
-          # подменяем data
           rm -rf community/data
           mv /tmp/data-min community/data
 
