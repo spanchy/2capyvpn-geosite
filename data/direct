@@ -1,13 +1,13 @@
 # Custom domains
-ipconfig.io
-ifconfig.io
-stream-balancer-allo-1.live
-huntshowdown.com
-lenta.com
+domain:ipconfig.io
+domain:ifconfig.io
+domain:stream-balancer-allo-1.live
+domain:huntshowdown.com
+regexp:^([a-z0-9]+\.)*lenta\.[a-z0-9-]+$
 
 # Special domains
-2capy.com
-ittema.com
+domain:2capy.com
+domain:ittema.com
 
 # Reserved
 include:private
