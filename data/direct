@@ -3,7 +3,10 @@ domain:ipconfig.io
 domain:ifconfig.io
 domain:stream-balancer-allo-1.live
 domain:huntshowdown.com
+# lenta shop
 regexp:^([a-z0-9]+\.)*lenta\.[a-z0-9-]+$
+# wps office
+regexp:^([a-z0-9]+\.)*wps\.[a-z0-9-]+$
 
 # Special domains
 domain:2capy.com
