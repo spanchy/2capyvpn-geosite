@@ -7,6 +7,8 @@ domain:huntshowdown.com
 regexp:^([a-z0-9]+\.)*lenta\.[a-z0-9-]+$
 # wps office
 regexp:^([a-z0-9]+\.)*wps\.[a-z0-9-]+$
+# anydesk connections
+domain:net.anydesk.com
 
 # Special domains
 domain:2capy.com
