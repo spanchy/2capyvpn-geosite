@@ -1,11 +1,11 @@
 # Ai domains
-meta.ai
+domain:meta.ai
 
 # Billing
-stripe.com
-stripe.dev
-stripe.global
-link.com
+domain:stripe.com
+domain:stripe.dev
+domain:stripe.global
+domain:link.com
 
 # Regex
 regexp:^([a-z0-9]+\.)*sephora\.[a-z0-9-]+$
@@ -13,166 +13,167 @@ regexp:^([a-z0-9]+\.)*pinterest\.[a-z0-9-]+$
 regexp:^([a-z0-9]+\.)*pinterest\.[a-z0-9-]+\.[a-z0-9-]+$
 
 # Games
-embark.games
-embark.net
+domain:embark.games
+domain:embark.net
 
 # Teamviewer download soft domain
-download.teamviewer.com
-dl.teamviewer.com
+domain:download.teamviewer.com
+domain:dl.teamviewer.com
 
 # Zimbra Mail
-zimbra.org
-zimbra.com
+domain:zimbra.org
+domain:zimbra.com
 
 # PHP repo
-sury.org
+domain:sury.org
 
 # Nextcloud
-nextcloud.com
-excalidraw.com
+domain:nextcloud.com
+domain:excalidraw.com
 
 # Omada
-support.omadanetworks.com
+domain:support.omadanetworks.com
 
 # Cisco
-software.cisco.com
+domain:software.cisco.com
 
 # Some sites
-codecguide.com
-paddle.com
-pkgs.org
-git-scm.com
-pinterestmail.com
-abtasty.com
-geekchange.com
-kernel.org
-deb.freepbx.org
-reversing.center
-speedtest.net
-clamav.net
-digikey.com
-fastpic.org
-mongodb.com
-scene7.com
-tiktokshop.com
-havaianas.com
-focalboard.com
-vestiairecollective.com
-youscan.io
-hm.com
-#reddit.com
-readthedocs.io
-hsprotect.net
-sms-activate.io
-vendotek.com
-ott-nav.com
-esimplus.me
-firebirdsql.org
-ottplayer.tv
-threema.com
-pixlee.com
-stylekoreankbeautywholesale.com
+domain:codecguide.com
+domain:paddle.com
+domain:pkgs.org
+domain:git-scm.com
+domain:pinterestmail.com
+domain:abtasty.com
+domain:geekchange.com
+domain:kernel.org
+domain:deb.freepbx.org
+domain:reversing.center
+domain:speedtest.net
+domain:clamav.net
+domain:digikey.com
+domain:fastpic.org
+domain:mongodb.com
+domain:scene7.com
+domain:tiktokshop.com
+domain:havaianas.com
+domain:focalboard.com
+domain:vestiairecollective.com
+domain:youscan.io
+domain:hm.com
+#domain:reddit.com
+domain:readthedocs.io
+domain:hsprotect.net
+domain:sms-activate.io
+domain:vendotek.com
+domain:ott-nav.com
+domain:esimplus.me
+domain:firebirdsql.org
+domain:ottplayer.tv
+domain:threema.com
+domain:pixlee.com
+domain:stylekoreankbeautywholesale.com
 
 # Tickets
 regexp:^([a-z0-9]+\.)*ticketmaster\.([a-z]{2}|[a-z]{3})$
 
 # Additional domains
-hdrezka.ac
-ngrok.com
-animego.me
+domain:hdrezka.ac
+domain:ngrok.com
+domain:animego.me
 
 # Money exchange rating
-bestchange.ru
+domain:bestchange.ru
 
 # Money exchange list
-buhtaobmena.me
-bybit.com
+domain:buhtaobmena.me
+domain:bybit.com
 
 # Gen Digital software
-ccleaner.com
-ccleanerbrowser.com
+domain:ccleaner.com
+domain:ccleanerbrowser.com
 
 # Adventure domains
 # Airbnb
-airbnb.ru
-airbnb.com
+domain:airbnb.ru
+domain:airbnb.com
 
 # CDN
-avcdn.net
-phncdn.com
-cdn77.org
-document360.io
-oaistatic.com
-oaiusercontent.com
-mintcdn.com
-usefathom.com
-cdn.segment.com
-mintlify.com
-vstor.top
-vsassets.io
-pinimg.com.cdn.cloudflare.net
-pinterest.map.fastly.net
-muscache.com
-redditstatic.com
-redditmedia.com
-xnxx-cdn.com
-xhcdn.com
-sentry.io
-px-cdn.net
-cquotient.com
-px-client.net
-videofile.me
-stripecdn.com
-octo25.me
-static.microsoft
-cdn.office.net
-cdn.gladly.com
-cdn.clarip.com
-techlab-cdn.com
-js-cdn.dynatrace.com
-pxlecdn.com
-cdn.branch.io
-operacdn.com
-ticketm.net
-tmol.io
+domain:avcdn.net
+domain:phncdn.com
+domain:cdn77.org
+domain:document360.io
+domain:oaistatic.com
+domain:oaiusercontent.com
+domain:mintcdn.com
+domain:usefathom.com
+domain:cdn.segment.com
+domain:mintlify.com
+domain:vstor.top
+domain:vsassets.io
+domain:pinimg.com.cdn.cloudflare.net
+domain:pinterest.map.fastly.net
+domain:muscache.com
+domain:redditstatic.com
+domain:redditmedia.com
+domain:xnxx-cdn.com
+domain:xhcdn.com
+domain:sentry.io
+domain:px-cdn.net
+domain:cquotient.com
+domain:px-client.net
+domain:videofile.me
+domain:stripecdn.com
+domain:octo25.me
+domain:static.microsoft
+domain:cdn.office.net
+domain:cdn.gladly.com
+domain:cdn.clarip.com
+domain:techlab-cdn.com
+domain:js-cdn.dynatrace.com
+domain:pxlecdn.com
+domain:cdn.branch.io
+domain:operacdn.com
+domain:ticketm.net
+domain:tmol.io
+domain:stylekorean.com
 
 # Cloudflare
-cloudfront.net
-cloudflareinsights.com
+domain:cloudfront.net
+domain:cloudflareinsights.com
 
 # Microsoft
-live.com
-outlook.com
-msftauth.net
-microsoftonline.com
+domain:live.com
+domain:outlook.com
+domain:msftauth.net
+domain:microsoftonline.com
 
 # Mega
-mega.co.nz
-mega.nz
+domain:mega.co.nz
+domain:mega.nz
 
 # Mining polls
-emcd.io
-bitmain.com
+domain:emcd.io
+domain:bitmain.com
 
 # Blocked access from Russia IPs
-filecloud.com
-isc.org
-happ-proxy.com
+domain:filecloud.com
+domain:isc.org
+domain:happ-proxy.com
 
 # Ubisoft
-ubi.com
-ubisoft.com
+domain:ubi.com
+domain:ubisoft.com
 
 # IPTV
-tv.team
+domain:tv.team
 
 # Low speed from Russia IPs
-downloads.openwrt.org
-dl.sourceforge.net
-zoneminder.com
+domain:downloads.openwrt.org
+domain:dl.sourceforge.net
+domain:zoneminder.com
 
 # Crowdsec repository
-distrohub.kyiv.ua
+domain:distrohub.kyiv.ua
 
 # Including additional category
 include:category-geoblock-ru
