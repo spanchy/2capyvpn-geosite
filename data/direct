@@ -12,7 +12,7 @@ regexp:^([a-z0-9]+\.)*1cfresh\.[a-z0-9-]+$
 # anydesk connections
 domain:net.anydesk.com
 # teamviewer connections
-domain:router.teamviewer.com
+domain:rlb.teamviewer.com
 
 # Special domains
 domain:2capy.com
