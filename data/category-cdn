@@ -135,12 +135,11 @@ skycdn.com.cn
 soasta-dswb.com
 srtcdn.net
 tl88.net
+
 # Cloudflare v2fly
 argotunnel.com
 cfargotunnel.com
 cfl.re
-cloudflare-dns.com
-cloudflare-ech.com
 cloudflare-esni.com
 cloudflare-gateway.com
 cloudflare-quic.com
@@ -165,16 +164,15 @@ cloudflarestream.com
 cloudflaretest.com
 cloudflarewarp.com
 every1dns.net
-imagedelivery.net
 isbgpsafeyet.com
 one.one.one
 pacloudflare.com
-pages.dev
 r2.dev
 trycloudflare.com
 videodelivery.net
 warp.plus
 workers.dev
+
 # fastly v2fly
 fastly-edge.com
 fastly-terrarium.com
@@ -184,10 +182,10 @@ fastly.net
 fastlylabs.com
 fastlylb.net
 zencdn.net
+
 # Hetzner v2fly
 first-ns.de
 hetzner.cloud
-hetzner.com
 hetzner.company
 hetzner.de
 hetzner.social
@@ -198,8 +196,8 @@ your-objectstorage.com
 your-server.de
 your-storagebox.de
 your-storageshare.de
+
 # DigitalOcean v2fly
-digitalocean.com
 digitaloceanspaces.com
 do.co
 nginxconfig.io
