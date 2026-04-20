@@ -69,11 +69,19 @@ jobs:
             [ -f "community/data/$file" ] || return 0
             # читаем include зависимости
             while IFS= read -r dep; do
+              [ -n "$dep" ] || continue
+              
               if ! grep -Fxq "$dep" "$needed"; then
                 echo "$dep" >> "$needed"
                 resolve "$dep"
               fi
-              done < <(grep '^include:' "community/data/$file" 2>/dev/null | sed 's/^include://')
+              
+              done < <(
+                grep '^include:' "community/data/$file" 2>/dev/null \
+                  | sed 's/^include://' \
+                  | sed 's/[[:space:]]*#.*$//' \
+                  | sed 's/^[[:space:]]*//; s/[[:space:]]*$//'
+              )
           }
 
           resolve "category-ru"
