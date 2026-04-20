@@ -1,5 +1,4 @@
 #Origin
-
 domain:dawngate.com
 domain:eastore.com
 domain:lordofultima.com
@@ -9,6 +8,7 @@ domain:cloudsync-prod.s3.amazonaws.com
 domain:origin-a.akamaihd.net
 domain:rtm.tnt-ea.com
 domain:ssl-lvlt.cdn.ea.com
+
 # EA
 domain:awayoutgame.com
 domain:battlefront2.com
@@ -74,19 +74,25 @@ domain:unravel2.com
 domain:unraveltwo.com
 domain:visceralgames.com
 domain:yogify.com
+
 # Anthem
 domain:anthemgame.com
 domain:anthemthegame.com
+
 # Apex Legends
 domain:apexlegends.com
+
 # Bioware
 domain:bioware.com
 domain:biowarestore.com
+
 # Broadsword
 domain:eamythic.com
 domain:eamythic.net
+
 # Command and Conquer
 domain:cncrivals.com
+
 # Dark Age of Camelot
 domain:camelot-europe.com
 domain:camelotherald.com
@@ -94,28 +100,36 @@ domain:camelotherald.net
 domain:daoc.net
 domain:darkageofcamelot.com
 domain:darkness-risen.com
+
 # Dead Space
 domain:deadspacegame.com
+
 # Dragon Age
 domain:dragonage.com
 domain:dragonagekeep.com
 domain:dragonagemovie.com
 domain:thedreadwolfrises.com
+
 # dungeonkeeper
 domain:dungeonkeeper.cn
 domain:dungeonkeeper.com
 domain:dungeonkeeper.com.cn
+
 # FIFA
 domain:eafootballworld.com
 domain:fifastreet.com
 domain:fifastreet3.com
+
 # Frost Bite
 domain:frostbite.com
+
 # Industrial Toys
 domain:industrialtoys.com
+
 # Mass Effect
 domain:masseffect.com
 domain:masseffectarchives.com
+
 # Mirror's Edge
 domain:eamirrorsedge.com
 domain:mirrorsedge.com
@@ -123,6 +137,7 @@ domain:mirrorsedge.jp
 domain:mirrorsedge.net
 domain:mirrorsedge2.com
 domain:mirrorsedge2d.com
+
 # Need For Speed
 domain:blackboxgames.com
 domain:eablackbox.com
@@ -142,17 +157,23 @@ domain:needforspeedtimeattack.com
 domain:needforspeedundergroundeast.com
 domain:nfsworld.com
 domain:teamneedforspeed.com
+
 # Plants VS Zombies
 domain:plantsvszombies2.com
 domain:pvzgw2.com
+
 # Sea of Solitude
 domain:seaofsolitude.com
+
 # Simcity
 domain:simcity-buildit.com
 domain:simcity.com
+
 # Skate
 domain:skate2.com
+
 # SPEARHEAD
+
 # Star Wars
 domain:starwarsfallenorder.com
 domain:starwarsjedifallenorder.com
@@ -161,14 +182,17 @@ domain:swjedifallenorder.com
 domain:swjfo.com
 domain:swtor.com
 domain:swtor.net
+
 # The Sims
 domain:mysims.com
 domain:thesims.com
 domain:thesims3.com
 domain:thesims4.com
 domain:thesimssocial.com
+
 # Titan Fall
 domain:titanfall.com
+
 # Ultima Online
 domain:mythicentertainment.com
 domain:mythicentertainment.net
@@ -176,6 +200,7 @@ domain:mythicgames.com
 domain:ultimaonline.com
 domain:uo.com
 domain:uoherald.com
+
 # XDS
 domain:xdsummit.com
 domain:ea.tt.omtrdc.net
