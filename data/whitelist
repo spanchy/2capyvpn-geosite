@@ -129,7 +129,6 @@ domain:jamal.ru
 domain:surgut.ru
 domain:yamal.ru
 domain:zdrav10.ru
-
 # Unsorted custom from: https://github.com/kirilllavrov/RU-domain-list-for-whitelist + https://github.com/hxehex/russia-mobile-internet-whitelist/ + v2ray + custom by me
 domain:1c-bitrix.ru
 domain:1c.ru
@@ -454,7 +453,6 @@ domain:youla-web-static.mrgcdn.ru
 domain:youla.io
 domain:youla.ru
 domain:zentotem.net
-
 # Other New
 hematonix.ru
 medtrum.ru

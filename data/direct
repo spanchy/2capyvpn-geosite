@@ -18,7 +18,6 @@ domain:router.teamviewer.com
 # Special domains
 domain:2capy.com
 domain:ittema.com
-
 # Reserved
 include:private
 include:whitelist

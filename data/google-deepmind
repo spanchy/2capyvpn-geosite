@@ -7,7 +7,6 @@ geller-pa.googleapis.com
 generativelanguage.googleapis.com
 proactivebackend-pa.googleapis.com
 robinfrontend-pa.googleapis.com
-
 # Google AI Studio
 ai.google.dev
 generativeai.google
@@ -17,40 +16,32 @@ aistudio.google.com
 bard.google.com
 gemini.google
 gemini.google.com
-
 # Gemini Code Assist
 cloudaicompanion.googleapis.com
 cloudcode-pa.googleapis.com
 daily-cloudcode-pa.googleapis.com
-
 # NotebookLM
 notebooklm-pa.googleapis.com
 notebooklm.googleapis.com
 notebooklm.google
 notebooklm.google.com
-
 # Jules
 jules.google
 jules.google.com
-
 # Google AI Labs
 labs.google
 labs.google.com
 aisandbox-pa.googleapis.com
-
 # Android Studio Gemini Code Assist
 aida.googleapis.com
-
 # Opal
 opal.google
 opal.google.com
-
 # Antigravity
 antigravity-pa.googleapis.com
 antigravity.googleapis.com
 antigravity.google
 antigravity-unleash.goog
-
 # Other
 clients6.google.com
 aitestkitchen.withgoogle.com

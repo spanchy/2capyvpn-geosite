@@ -7,7 +7,6 @@ domain:habrastorage.org
 domain:onlinesim.io
 
 # Зарубежные сайты, которые ограничивают функционал для российских IP
-
 # Adobe
 domain:adobe-identity.com
 domain:adobe-services.com
@@ -35,41 +34,33 @@ domain:crashlytics.com
 domain:ftcdn.net
 domain:typekit.com
 domain:typekit.net
-
 # AMD
 domain:amd.com
-
 # Autodesk
 keyword:autodesk.com
 domain:cdn.web-platform.io
 domain:qualtrics.com
-
 # Basecamp
 domain:37signals.com
 keyword:basecamp.com
 domain:basecampapi.com
-
 # Brave
 keyword:brave.com
-
 # Brawl Stars, Clash Royale, Clash of Clans
 domain:brawlstarsgame.com
 domain:clashofclans.com
 domain:clashroyaleapp.com
 domain:squadbustersgame.com
 domain:supercell.com
-
 # Canva
 domain:canva-apps.com
 keyword:canva.com
 domain:canva.dev
-
 # Cici/Dola
 domain:cici.com
 domain:ciciai.com
 domain:ciciaicdn.com
 domain:dola.com
-
 # Claude
 keyword:anthropic.com
 keyword:claude.ai
@@ -77,48 +68,37 @@ domain:claudeusercontent.com
 keyword:intercom.io
 domain:intercomassets.com
 domain:intercomcdn.com
-
 # ClickUp
 domain:clickup.com
-
 # DeepL
 keyword:deepl.
-
 # Deezer
 keyword:deezer.com
 domain:dzcdn.net
-
 # Dell
 domain:dell.com
 domain:dellcdn.com
-
 # Designer + Copilot (Microsoft)
 domain:copilot.microsoft.com
 domain:designer.microsoft.com
-
 # Dyson
 keyword:dyson.
-
 # ElevenLabs + ElevenReader
 domain:elevenlabs.io
 domain:elevenreader.io
-
 # Fitbit
 domain:api.fitbit.com
 domain:fitbit-pa.googleapis.com
 domain:fitbit.google.com
 domain:fitbitvestibuleshim-pa.googleapis.com
-
 # Google DeepMind (Gemini)
 domain:deepmind.com
 domain:deepmind.google
-
 # Google DeepMind - Google Generative Language API
 domain:geller-pa.googleapis.com
 domain:generativelanguage.googleapis.com
 domain:proactivebackend-pa.googleapis.com
 domain:robinfrontend-pa.googleapis.com
-
 # Google DeepMind - Google AI Studio
 domain:ai.google.dev
 domain:generativeai.google
@@ -128,40 +108,32 @@ domain:aistudio.google.com
 domain:bard.google.com
 domain:gemini.google
 domain:gemini.google.com
-
 # Google DeepMind - Gemini Code Assist
 domain:cloudaicompanion.googleapis.com
 domain:cloudcode-pa.googleapis.com
 domain:daily-cloudcode-pa.googleapis.com
-
 # Google DeepMind - NotebookLM
 domain:notebooklm-pa.googleapis.com
 domain:notebooklm.googleapis.com
 domain:notebooklm.google
 domain:notebooklm.google.com
-
 # Google DeepMind - Jules
 domain:jules.google
 domain:jules.google.com
-
 # Google DeepMind - Google AI Labs
 domain:labs.google
 domain:labs.google.com
 domain:aisandbox-pa.googleapis.com
-
 # Google DeepMind - Android Studio Gemini Code Assist
 domain:aida.googleapis.com
-
 # Google DeepMind - Opal
 domain:opal.google
 domain:opal.google.com
-
 # Google DeepMind - Antigravity
 domain:antigravity-pa.googleapis.com
 domain:antigravity.googleapis.com
 domain:antigravity.google
 domain:antigravity-unleash.goog
-
 # Google DeepMind - Other
 domain:clients6.google.com
 domain:aitestkitchen.withgoogle.com
@@ -171,50 +143,39 @@ domain:developerprofiles-pa.googleapis.com
 domain:lookerstudio.google.com
 domain:o.pki.goog
 domain:suggestqueries.google.com
-
 # Grok
 keyword:grok.com
 domain:grok.x.com
 domain:x.ai
-
 # Guilded
 domain:guilded.gg
-
 # Imgur
 keyword:imgur.com
-
 # Intel
 keyword:intel.
-
 # Jetbrains
 keyword:jetbrains.com
 domain:jetbrains.ai
 domain:jetbrains.space
 domain:myjetbrains.com
-
 # Kaleido
 domain:designify.com
 domain:kaleido.ai
 domain:remove.bg
 domain:unscreen.com
-
 # Make
 domain:make.com
-
 # Manus
 domain:manus.cdn
 keyword:manus.im
-
 # Meta AI
 keyword:meta.ai
 domain:llamameta.net
 domain:meta.com
 domain:metademolab.com
-
 # Naukri
 domain:naukimg.com
 domain:naukri.com
-
 # Netflix
 domain:fast.com
 keyword:netflix.
@@ -233,7 +194,6 @@ regexp:(^|\.)apiproxy-device-prod-nlb-.+\.amazonaws\.com$
 regexp:(^|\.)apiproxy-website-nlb-prod-.+\.amazonaws\.com$
 regexp:(^|\.)dualstack\.apiproxy-.+\.amazonaws\.com$
 regexp:(^|\.)dualstack\.ichnaea-web-.+\.amazonaws\.com$
-
 # Notion
 domain:hellonotion.com
 domain:notion-media.com
@@ -244,7 +204,6 @@ domain:notionusercontent.com
 domain:splunkcloud.com
 keyword:zendesk.com
 domain:zendesk.de
-
 # OpenAI / ChatGPT
 keyword:chatgpt.com
 domain:chat.com
@@ -265,17 +224,13 @@ regexp:^chatgpt-async-webps-prod-\S+-\d+\.webpubsub\.azure\.com$
 domain:o33249.ingest.sentry.io
 domain:openaicom.imgix.net
 domain:browser-intake-datadoghq.com
-
 # Oracle
 domain:oracle.com
 domain:oraclecloud.com
-
 # Parsec
 domain:parsec.app
-
 # Pixabay
 domain:pixabay.com
-
 # Protonmail
 domain:pm.me
 domain:proton.me
@@ -286,7 +241,6 @@ domain:protontech.ch
 domain:protonvpn.ch
 domain:protonvpn.com
 domain:protonweb.com
-
 # Reddit
 keyword:redd.it
 domain:reddit.app.link
@@ -300,16 +254,12 @@ domain:redditspace.com
 keyword:redditstatic.com
 domain:redditstatus.com
 domain:reddit.map.fastly.net
-
 # Reve
 domain:reve.art
-
 # SketchUp
 domain:sketchup.com
-
 # Spaceship
 domain:spaceship.com
-
 # Spotify
 domain:byspotify.com
 domain:pscdn.co
@@ -333,24 +283,17 @@ domain:heads-ak-spotify-com.akamaized.net
 domain:heads4-ak-spotify-com.akamaized.net
 domain:spotify.map.fastly.net
 domain:spotify.map.fastlylb.net
-
 # Strava
 keyword:strava.com
-
 # Tableau
 keyword:tableau.com
-
 # Tailscale
 keyword:tailscale.com
-
 # TeamViewer
 keyword:teamviewer.com
-
 # Tidal
-domain:onetrust.com
 domain:squareup.com
 keyword:tidal.com
-
 # Tiktok / CapCut / ByteDance
 keyword:amemv.com
 keyword:bytecdn.cn
@@ -454,31 +397,24 @@ domain:tiktokcdn-com.akamaized.net
 domain:v16-tiktokcdn-com.akamaized.net
 domain:tiktokcdn.liveplay.myqcloud.com
 domain:bytedance.map.fastly.net
-
 # TMDB
 domain:theaudiodb.com
 domain:themoviedb.org
 domain:tmdb-image-prod.b-cdn.net
 keyword:tmdb.com
 keyword:tmdb.org
-
 # Truth Social
 keyword:truthsocial.com
-
 # WB Games
 domain:wbagora.com
 keyword:wbgames.com
-
 # Weather.com
 keyword:weather.com
-
 # Windsurf
 domain:codeium.com
 domain:windsurf.com
-
 # WorkOS
 keyword:workos.com
-
 # Xbox
 domain:auth.xboxlive.com
 domain:edgeservices.bing.com
@@ -486,14 +422,11 @@ domain:gssv-play-prod.xboxlive.com
 domain:rewards.bing.com
 domain:sydney.bing.com
 domain:xboxdesignlab.xbox.com
-
 # Xerox
 keyword:xerox.com
-
 # Zapier
 domain:zapier-deployment.com
 keyword:zapier.com
-
 # Остальное
 domain:2407.pl
 domain:6pm.com

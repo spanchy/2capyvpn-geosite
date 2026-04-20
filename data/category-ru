@@ -16,20 +16,15 @@ domain:tilda.cc
 domain:kinescope.io
 domain:kinescopecdn.net
 domain:redheadsound.studio
-
 # v2ray category-gov-ru
 domain:emias.info
-
 # runetfreedom only ru
 domain:bitrix.info
 domain:ozonusercontent.com
-domain:showip.net
-
 # Yandex
 keyword:yandex.
 domain:yandexcloud.net
 domain:yastatic.net
-
 # VK Company
 domain:mvk.com
 domain:userapi.com
@@ -54,7 +49,6 @@ domain:vkuserlive.net
 domain:vkuservideo.com
 domain:vkuservideo.net
 domain:mycdn.me
-
 # Tinkoff / Tbank
 keyword:tinkoff.
 domain:four-seasons.group
@@ -96,7 +90,6 @@ domain:jump.finance
 domain:t.finance
 domain:cloudpayments.world
 domain:investlaboratory.com
-
 # Alfabank
 domain:alfa.me
 domain:alfa-bank.net
@@ -132,7 +125,6 @@ domain:alfafuture.com
 domain:svoy.academy
 domain:alfa-usa.com
 domain:alfa-pc.com
-
 # VTB
 domain:vtbglobalperspectives.com
 domain:russiacalling.com
@@ -147,7 +139,6 @@ domain:vtb.digital
 domain:vtbkep.site
 domain:vtbindia.com
 domain:vtb.promo
-
 # Sberbank / Sber
 domain:sberbank.com
 domain:sberlabs.com
@@ -188,25 +179,18 @@ domain:sber.ws
 domain:vozvratnalogov.online
 domain:smsemailstats.com
 domain:sbercoin.com
-
 # МОРСКОЙ БАНК (АО) (Рег. № 77)
 domain:maritimebank.com
-
 # Прио-Внешторгбанк (ПАО) (Рег. № 212)
 domain:priovtb.com
-
 # Банк ГПБ (АО) (Рег. № 354)
 domain:gazprombank.tech
-
 # ПАО "СПБ Банк" (Рег. № 435)
 domain:spbbank.com
-
 # ООО "Камкомбанк" (Рег. № 438)
 domain:kamkombank.pro
-
 # АО РНКО "НОДА" (Рег. № 503)
 domain:noda.finance
-
 # ПАО "Совкомбанк" (Рег. № 963)
 domain:halva.email
 domain:halva.energy
@@ -221,28 +205,20 @@ domain:sovcombank.business
 domain:sovcombank.credit
 domain:sovcombank.info
 domain:sovcombank.com
-
 # АО "ПЕРВОУРАЛЬСКБАНК" (Рег. № 965)
 domain:pvubank.com
-
 # АО КБ "ВАКОБАНК" (Рег. № 1291)
 domain:vakobank.com
-
 # КБ "ЭНЕРГОТРАНСБАНК" (АО) (Рег. № 1307)
 domain:energotransbank.com
-
 # ООО "АЛТЫНБАНК" (Рег. № 2070)
 domain:altynbank.com
-
 # АО АКБ "Алеф-Банк" (Рег. № 2119)
 domain:alefbank.com
-
 # АКБ "Абсолют Банк" (ПАО) (Рег. № 2306)
 domain:absolutbank.com
-
 # АО "Банк ДОМ.РФ" (Рег. № 2312)
 domain:roscap.com
-
 # КБ "Кубань Кредит" ООО (Рег. № 2518)
 domain:kk.bank
 domain:kuban-credit.biz
@@ -261,26 +237,19 @@ domain:kubankredit.net
 domain:xn----7sbcoetidz6azac4j.com
 domain:xn----7sbcoetidz6azac4j.net
 domain:xn--80abkdqhcx2axc5i.com
-
 # Банк "КУБ" (АО) (Рег. № 2584)
 domain:prostobank.online
-
 # АКБ "СЛАВИЯ" (АО) (Рег. № 2664)
 domain:slavia-bank.com
 domain:slaviabank.com
-
 # КБ "ЛОКО-Банк" (АО) (Рег. № 2707)
 domain:locko-bank.info
-
 # ПАО СКБ Приморья "Примсоцбанк" (Рег. № 2733)
 domain:pskb.com
-
 # АО КБ "Соколовский" (Рег. № 2830)
 domain:astrasend.net
-
 # ООО "ПроКоммерцБанк" (Рег. № 2996)
 domain:procombank.com
-
 # РНКО "Платежный Центр" (ООО) (Рег. № 3166)
 domain:corona-perevod.com
 domain:coronaperevod.com
@@ -293,54 +262,38 @@ domain:perevod-korona.org
 domain:perevod-korona.pro
 domain:perevodkorona.com
 domain:korona.com
-
 # ПАО "БАЛТИНВЕСТБАНК" (Рег. № 3176)
 domain:baltinvestbank.com
-
 # АО "ПроБанк" (Рег. № 3296)
 domain:probank.pro
-
 # АО "Мидзухо Банк (Москва)" (Рег. № 3337)
 domain:mizuhogroup.com
-
 # АО "Россельхозбанк" (Рег. № 3349)
 domain:rshb.pro
 domain:rusagrobank.com
-
 # АО "Банк Финсервис" (Рег. № 3388)
 domain:finsb.com
-
 # "Банк "МБА-МОСКВА" ООО (Рег. № 3395)
 domain:granat.az
-
 # ООО "Ю Би Эс Банк" (Рег. № 3463)
 domain:ubs.com
-
 # АО "Эм-Ю-Эф-Джи Банк (Евразия)" (Рег. № 3465)
 domain:mufg.jp
-
 # НКО НКЦ (АО) (Рег. № 3466)
 domain:nationalclearingcenter.com
 domain:nationalclearingcentre.com
 domain:ncc-qccp.com
-
 # АО КБ "ЮНИСТРИМ" (Рег. № 3467)
 domain:unistream.com
-
 # ООО "Чайна Констракшн Банк" (Рег. № 3515)
 domain:ccb.com
-
 # ООО "Чайнасельхозбанк" (Рег. № 3529)
 domain:abchina.com
-
 # ООО "НКО "ЭЛЕКСИР" (Рег. № 3533)
 domain:eleksir.finance
-
 # АО "Банк 131" (Рег. № 3538)
 domain:bank131.com
-
 # ООО "Банк Точка" (Рег. № 3545)
 domain:tochka.com
-
 # ООО РНКО "ЭР Финанс" (Рег. № 3555)
 domain:er-fin.com

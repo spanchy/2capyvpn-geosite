@@ -54,7 +54,6 @@ edgesuite-cdn.net
 edgecastcdn.net
 edgekey-cust.net
 akamai-stats.com
-
 accdn.com.cn
 ak1.net
 aka-ai.com
@@ -136,7 +135,6 @@ skycdn.com.cn
 soasta-dswb.com
 srtcdn.net
 tl88.net
-
 # Cloudflare v2fly
 argotunnel.com
 cfargotunnel.com
@@ -177,7 +175,6 @@ trycloudflare.com
 videodelivery.net
 warp.plus
 workers.dev
-
 # fastly v2fly
 fastly-edge.com
 fastly-terrarium.com
@@ -187,7 +184,6 @@ fastly.net
 fastlylabs.com
 fastlylb.net
 zencdn.net
-
 # Hetzner v2fly
 first-ns.de
 hetzner.cloud
@@ -202,7 +198,6 @@ your-objectstorage.com
 your-server.de
 your-storagebox.de
 your-storageshare.de
-
 # DigitalOcean v2fly
 digitalocean.com
 digitaloceanspaces.com
