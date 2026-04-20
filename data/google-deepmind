@@ -13,10 +13,7 @@ ai.google.dev
 generativeai.google
 makersuite.google.com
 ai.studio
-aistudio.google.com
-bard.google.com
 gemini.google
-gemini.google.com
 
 # Gemini Code Assist
 cloudaicompanion.googleapis.com
@@ -26,7 +23,6 @@ daily-cloudcode-pa.googleapis.com
 # NotebookLM
 notebooklm-pa.googleapis.com
 notebooklm.googleapis.com
-notebooklm.google
 notebooklm.google.com
 
 # Jules

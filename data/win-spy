@@ -364,7 +364,6 @@ domain:v10.events.data.microsoft.com
 domain:v20.events.data.microsoft.com
 domain:vortex-win-sandbox.data.microsoft.com
 domain:vortex-win.data.microsoft.com
-
 domain:functional.events.data.microsoft.com
 domain:browser.events.data.msn.com
 domain:self.events.data.microsoft.com

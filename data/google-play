@@ -1,7 +1,8 @@
 # Google Play PCAP
-
-keyword:googleplay.com
-keyword:play.google.com
+domain:gvt1.com
+domain:googleplay.com
+domain:play.google.com
+domain:play.googleapis.com
 domain:play-fe.googleapis.com
 domain:prod-lt-playstoregatewayadapter-pa.googleapis.com
 domain:playstoregatewayadapter-pa.googleapis.com
@@ -14,9 +15,7 @@ domain:voledevice-pa.googleapis.com
 domain:play-apps-features.googleusercontent.com
 domain:playconsole.static.usercontent.goog
 
-
 # Google Play Services PCAP
-
 domain:digitalassetlinks.googleapis.com
 domain:playgateway-pa.googleapis.com
 domain:mtalk.google.com
@@ -27,14 +26,11 @@ domain:app-measurement.com
 domain:quake-pa.googleapis.com
 domain:safebrowsing.googleapis.com
 
-
 # OTA Android
-
 domain:ota.googlezip.net
 domain:ota-cache1.googlezip.net
 domain:ota-cache2.googlezip.net
 domain:ota-cache3.googlezip.net
 
 # Android Apps
-
 domain:firebaseinstallations.googleapis.com

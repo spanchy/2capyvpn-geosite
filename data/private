@@ -1,10 +1,13 @@
 # References:
+
 # https://www.iana.org/assignments/special-use-domain-names/special-use-domain-names.xhtml
+
 # https://unix.stackexchange.com/questions/92441/whats-the-difference-between-local-home-and-lan
 lan
 localdomain
 
 # https://tools.ietf.org/html/rfc2606
+
 # https://tools.ietf.org/html/rfc6761
 example
 invalid
@@ -22,6 +25,7 @@ home.arpa
 internal
 
 # References: https://www.iana.org/assignments/locally-served-dns-zones/locally-served-dns-zones.xhtml
+
 # https://www.rfc-editor.org/rfc/rfc6303.html
 2.0.192.in-addr.arpa
 10.in-addr.arpa
@@ -129,17 +133,21 @@ full:instant.arubanetworks.com
 full:setmeup.arubanetworks.com
 
 # ASUS router
+
 # Reference: https://www.asus.com/support/FAQ/1005263/
 full:asusrouter.com
 full:router.asus.com
 full:www.asusrouter.com
 
 # H3C
+
 # https://wwwsg.h3c.com/cn/d_202007/1316557_30005_0.htm#_Toc46214911
 full:oasisauth.h3c.com
 
 # Netgear router
+
 # Reference: https://kb.netgear.com/27199/I-can-t-access-my-router-what-do-I-do
+
 # https://www.netgear.com/business/services/aplogincom/
 full:routerlogin.com
 full:www.routerlogin.com
@@ -153,6 +161,7 @@ phicomm.me
 router.ctc
 
 # Plex Media Server
+
 # Reference: https://support.plex.tv/articles/206225077-how-to-use-secure-server-connections/
 plex.direct
 
@@ -167,11 +176,13 @@ test.steampowered.com
 tendawifi.com
 
 # TP-Link router
+
 # Reference: https://resource.tp-link.com.cn/m/productClass/product_document?id=1655112502304621
 tplinkwifi.net
 full:tplogin.cn
 
 # Xiaomi router
+
 # Reference: https://www1.miwifi.com/miwifi_faq.html
 full:miwifi.com
 full:www.miwifi.com
@@ -180,5 +191,6 @@ full:www.miwifi.com
 zte.home
 
 # Tailscale Magic DNS
+
 # Reference: https://tailscale.com/kb/1081/magicdns/#fully-qualified-domain-names-vs-machine-names
 ts.net

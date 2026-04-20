@@ -54,7 +54,6 @@ edgesuite-cdn.net
 edgecastcdn.net
 edgekey-cust.net
 akamai-stats.com
-
 accdn.com.cn
 ak1.net
 aka-ai.com
@@ -141,8 +140,6 @@ tl88.net
 argotunnel.com
 cfargotunnel.com
 cfl.re
-cloudflare-dns.com
-cloudflare-ech.com
 cloudflare-esni.com
 cloudflare-gateway.com
 cloudflare-quic.com
@@ -167,11 +164,9 @@ cloudflarestream.com
 cloudflaretest.com
 cloudflarewarp.com
 every1dns.net
-imagedelivery.net
 isbgpsafeyet.com
 one.one.one
 pacloudflare.com
-pages.dev
 r2.dev
 trycloudflare.com
 videodelivery.net
@@ -191,7 +186,6 @@ zencdn.net
 # Hetzner v2fly
 first-ns.de
 hetzner.cloud
-hetzner.com
 hetzner.company
 hetzner.de
 hetzner.social
@@ -204,7 +198,6 @@ your-storagebox.de
 your-storageshare.de
 
 # DigitalOcean v2fly
-digitalocean.com
 digitaloceanspaces.com
 do.co
 nginxconfig.io

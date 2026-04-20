@@ -50,17 +50,15 @@ domain:kernel.org
 domain:deb.freepbx.org
 domain:reversing.center
 domain:speedtest.net
-domain:clamav.net
-domain:digikey.com
 domain:fastpic.org
 domain:mongodb.com
 domain:scene7.com
-domain:tiktokshop.com
 domain:havaianas.com
 domain:focalboard.com
 domain:vestiairecollective.com
 domain:youscan.io
 domain:hm.com
+
 #domain:reddit.com
 domain:readthedocs.io
 domain:hsprotect.net
@@ -81,7 +79,6 @@ regexp:^([a-z0-9]+\.)*ticketmaster\.([a-z]{2}|[a-z]{3})$
 # Additional domains
 domain:hdrezka.ac
 domain:ngrok.com
-domain:animego.me
 
 # Money exchange rating
 domain:bestchange.ru
@@ -95,17 +92,15 @@ domain:ccleaner.com
 domain:ccleanerbrowser.com
 
 # Adventure domains
+
 # Airbnb
 domain:airbnb.ru
 domain:airbnb.com
 
 # CDN
-domain:avcdn.net
 domain:phncdn.com
 domain:cdn77.org
 domain:document360.io
-domain:oaistatic.com
-domain:oaiusercontent.com
 domain:mintcdn.com
 domain:cre.ma
 domain:usefathom.com
@@ -120,7 +115,6 @@ domain:pinterest.map.fastly.net
 domain:muscache.com
 domain:redditstatic.com
 domain:cafe24.com
-domain:redditmedia.com
 domain:poxo.com
 domain:xnxx-cdn.com
 domain:xhcdn.com
@@ -169,7 +163,6 @@ domain:isc.org
 domain:happ-proxy.com
 
 # Ubisoft
-domain:ubi.com
 domain:ubisoft.com
 
 # IPTV
