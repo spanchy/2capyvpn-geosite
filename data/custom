@@ -6,28 +6,37 @@ domain:stripe.com
 domain:stripe.dev
 domain:stripe.global
 domain:link.com
+
 # Regex
 regexp:^([a-z0-9]+\.)*sephora\.[a-z0-9-]+$
 regexp:^([a-z0-9]+\.)*pinterest\.[a-z0-9-]+$
 regexp:^([a-z0-9]+\.)*pinterest\.[a-z0-9-]+\.[a-z0-9-]+$
+
 # Games
 domain:embark.games
 domain:embark.net
+
 # Teamviewer download soft domain
 domain:download.teamviewer.com
 domain:dl.teamviewer.com
+
 # Zimbra Mail
 domain:zimbra.org
 domain:zimbra.com
+
 # PHP repo
 domain:sury.org
+
 # Nextcloud
 domain:nextcloud.com
 domain:excalidraw.com
+
 # Omada
 domain:support.omadanetworks.com
+
 # Cisco
 domain:software.cisco.com
+
 # Some sites
 domain:codecguide.com
 domain:paddle.com
@@ -41,17 +50,15 @@ domain:kernel.org
 domain:deb.freepbx.org
 domain:reversing.center
 domain:speedtest.net
-domain:clamav.net
-domain:digikey.com
 domain:fastpic.org
 domain:mongodb.com
 domain:scene7.com
-domain:tiktokshop.com
 domain:havaianas.com
 domain:focalboard.com
 domain:vestiairecollective.com
 domain:youscan.io
 domain:hm.com
+
 #domain:reddit.com
 domain:readthedocs.io
 domain:hsprotect.net
@@ -65,31 +72,35 @@ domain:ottplayer.tv
 domain:threema.com
 domain:pixlee.com
 domain:stylekoreankbeautywholesale.com
+
 # Tickets
 regexp:^([a-z0-9]+\.)*ticketmaster\.([a-z]{2}|[a-z]{3})$
+
 # Additional domains
 domain:hdrezka.ac
 domain:ngrok.com
-domain:animego.me
+
 # Money exchange rating
 domain:bestchange.ru
+
 # Money exchange list
 domain:buhtaobmena.me
 domain:bybit.com
+
 # Gen Digital software
 domain:ccleaner.com
 domain:ccleanerbrowser.com
+
 # Adventure domains
+
 # Airbnb
 domain:airbnb.ru
 domain:airbnb.com
+
 # CDN
-domain:avcdn.net
 domain:phncdn.com
 domain:cdn77.org
 domain:document360.io
-domain:oaistatic.com
-domain:oaiusercontent.com
 domain:mintcdn.com
 domain:cre.ma
 domain:usefathom.com
@@ -104,7 +115,6 @@ domain:pinterest.map.fastly.net
 domain:muscache.com
 domain:redditstatic.com
 domain:cafe24.com
-domain:redditmedia.com
 domain:poxo.com
 domain:xnxx-cdn.com
 domain:xhcdn.com
@@ -128,35 +138,45 @@ domain:operacdn.com
 domain:ticketm.net
 domain:tmol.io
 domain:stylekorean.com
+
 # Cloudflare
 domain:cloudfront.net
 domain:cloudflareinsights.com
+
 # Microsoft
 domain:live.com
 domain:outlook.com
 domain:msftauth.net
 domain:microsoftonline.com
+
 # Mega
 domain:mega.co.nz
 domain:mega.nz
+
 # Mining polls
 domain:emcd.io
 domain:bitmain.com
+
 # Blocked access from Russia IPs
 domain:filecloud.com
 domain:isc.org
 domain:happ-proxy.com
+
 # Ubisoft
-domain:ubi.com
 domain:ubisoft.com
+
 # IPTV
 domain:tv.team
+
 # Low speed from Russia IPs
 domain:downloads.openwrt.org
 domain:dl.sourceforge.net
 domain:zoneminder.com
+
 # Crowdsec repository
 domain:distrohub.kyiv.ua
+
 # Including additional category
 include:category-geoblock-ru
+
 # etc.
