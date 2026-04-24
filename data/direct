@@ -3,6 +3,8 @@ domain:ipconfig.io
 domain:ifconfig.io
 domain:stream-balancer-allo-1.live
 domain:huntshowdown.com
+# chat domain twitch.tv
+domain:chat.twitch.tv
 # for check location API in iOS/MacOS
 domain:gs-loc.apple.com
 
