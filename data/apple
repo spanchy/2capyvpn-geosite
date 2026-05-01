@@ -22,6 +22,8 @@ domain:updates-http.cdn-apple.com
 domain:updates.cdn-apple.com
 domain:wkms-public.apple.com
 domain:xp.apple.com
+domain:aaplimg.com
+domain:time.apple.com
 
 # v2fly apple-ads
 domain:api-adservices.apple.com
