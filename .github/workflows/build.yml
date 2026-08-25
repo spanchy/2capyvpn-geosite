@@ -65,48 +65,60 @@ jobs:
 
           resolve() {
             local file="$1"
-            # если файла нет — пропускаем
+
             [ -f "community/data/$file" ] || return 0
-            # читаем include зависимости
+
             while IFS= read -r dep; do
               [ -n "$dep" ] || continue
-              
+
               if ! grep -Fxq "$dep" "$needed"; then
                 echo "$dep" >> "$needed"
                 resolve "$dep"
               fi
-              
-              done < <(
-                grep '^include:' "community/data/$file" 2>/dev/null \
-                  | sed 's/^include://' \
-                  | sed 's/[[:space:]]*#.*$//' \
-                  | sed 's/^[[:space:]]*//; s/[[:space:]]*$//'
-              )
+
+            done < <(
+              grep '^include:' "community/data/$file" 2>/dev/null \
+                | sed 's/^include://' \
+                | sed 's/[[:space:]]*#.*$//' \
+                | sed 's/^[[:space:]]*//; s/[[:space:]]*$//' \
+                | awk '{print $1}'
+            )
           }
 
           resolve "category-ru"
 
-          # копируем только нужные upstream файлы
+          # Копируем зависимости category-ru из upstream
           while IFS= read -r f; do
             if [ -f "community/data/$f" ]; then
               cp "community/data/$f" "/tmp/data-min/$f"
             fi
           done < "$needed"
 
-          # мержим с локальным
+          # Добавляем локальный category-ru
           if [ -f data/category-ru ]; then
             cat data/category-ru >> /tmp/data-min/category-ru
           fi
 
+          # Убираем дубликаты, но include оставляем как есть
           awk '
             /^include:/ {print; next}
             !seen[$0]++
           ' /tmp/data-min/category-ru > /tmp/data-min/category-ru.tmp
-          
+
           mv /tmp/data-min/category-ru.tmp /tmp/data-min/category-ru
+
+          # Заменяем upstream data минимальным набором
           rm -rf community/data
           mv /tmp/data-min community/data
-          find ./data -type f ! -name "category-ru" -exec cp -a --parents {} community/data/ \;
+
+          # Копируем локальные списки БЕЗ лишнего data/data/
+          find ./data -maxdepth 1 -type f ! -name "category-ru" -print0 |
+            while IFS= read -r -d '' f; do
+              cp -a "$f" community/data/
+            done
+
+          echo "=== Files used for build ==="
+          find community/data -maxdepth 1 -type f -printf '%f\n' | sort
 
           pushd community >/dev/null
           go run ./ -outputdir=/tmp/out
