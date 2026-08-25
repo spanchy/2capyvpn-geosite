@@ -23,6 +23,12 @@ regexp:^([a-z0-9]+\.)*wps\.[a-z0-9-]+$
 # 1cfresh
 regexp:^([a-z0-9]+\.)*1cfresh\.[a-z0-9-]+$
 
+# ddos protections and other (russia)
+curator.pro
+
+# onlinetrade domains
+domain:servicepipe.tech
+
 # anydesk connections
 domain:net.anydesk.com
 
