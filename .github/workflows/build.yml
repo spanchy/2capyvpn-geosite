@@ -6,6 +6,7 @@ on:
       - master
     paths:
       - "data/**"
+      - ".github/workflows/build.yml"
 
 jobs:
   build:
@@ -111,11 +112,32 @@ jobs:
           rm -rf community/data
           mv /tmp/data-min community/data
 
+          # Загружаем внешние списки как отдельные geosite-категории
+          curl -fsSL --retry 3 --retry-all-errors \
+            https://raw.githubusercontent.com/Noktomezo/RussiaFancyLists/main/lists/geoblock/full.lst \
+            -o community/data/geoblock
+          curl -fsSL --retry 3 --retry-all-errors \
+            https://raw.githubusercontent.com/Noktomezo/RussiaFancyLists/main/lists/service/direct-with-ech.lst \
+            -o community/data/ech-direct
+          curl -fsSL --retry 3 --retry-all-errors \
+            https://raw.githubusercontent.com/Noktomezo/RussiaFancyLists/main/lists/service/prefer-direct.lst \
+            -o community/data/prefer-direct
+          test -s community/data/geoblock
+          test -s community/data/ech-direct
+          test -s community/data/prefer-direct
+
           # Копируем локальные списки БЕЗ лишнего data/data/
           find ./data -maxdepth 1 -type f ! -name "category-ru" -print0 |
             while IFS= read -r -d '' f; do
               cp -a "$f" community/data/
             done
+
+          # Добавляем внешний список в категорию whitelist
+          curl -fsSL --retry 3 --retry-all-errors \
+            https://raw.githubusercontent.com/Noktomezo/RussiaFancyLists/main/lists/whitelist/domains.lst \
+            -o /tmp/whitelist-domains.lst
+          test -s /tmp/whitelist-domains.lst
+          cat /tmp/whitelist-domains.lst >> community/data/whitelist
 
           echo "=== Files used for build ==="
           find community/data -maxdepth 1 -type f -printf '%f\n' | sort
