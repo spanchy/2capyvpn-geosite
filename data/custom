@@ -178,6 +178,6 @@ domain:zoneminder.com
 domain:distrohub.kyiv.ua
 
 # Including additional category
-include:category-geoblock-ru
+include:geoblock
 
 # etc.

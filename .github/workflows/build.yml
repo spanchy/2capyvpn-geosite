@@ -127,10 +127,17 @@ jobs:
           test -s community/data/prefer-direct
 
           # Копируем локальные списки БЕЗ лишнего data/data/
-          find ./data -maxdepth 1 -type f ! -name "category-ru" -print0 |
+          find ./data -maxdepth 1 -type f \
+            ! -name "category-ru" \
+            ! -name "category-geoblock-ru" \
+            -print0 |
             while IFS= read -r -d '' f; do
               cp -a "$f" community/data/
             done
+
+          # Объединяем локальные правила с внешней категорией geoblock
+          test -f data/category-geoblock-ru
+          cat data/category-geoblock-ru >> community/data/geoblock
 
           # Добавляем внешний список в категорию whitelist
           curl -fsSL --retry 3 --retry-all-errors \
