@@ -158,6 +158,16 @@ jobs:
           echo "=== Files used for build ==="
           find community/data -maxdepth 1 -type f -printf '%f\n' | sort
 
+          # Исправляем домены с ведущей точкой во всех списках
+          echo "=== Normalizing domain lists ==="
+
+          find community/data -maxdepth 1 -type f -print0 |
+          while IFS= read -r -d '' file; do
+          sed -i -E \
+           's/^\.([[:alnum:]-]+(\.[[:alnum:]-]+)*)$/domain:\1/' \
+           "$file"
+          done
+
           pushd community >/dev/null
           go run ./ -outputdir=/tmp/out
           popd >/dev/null
