@@ -17,6 +17,9 @@ domain:hls.gd
 # lenta shop
 regexp:^([a-z0-9]+\.)*lenta\.[a-z0-9-]+$
 
+# aviasales cdn
+domain:appsflyersdk.com
+
 # wps office
 regexp:^([a-z0-9]+\.)*wps\.[a-z0-9-]+$
 
